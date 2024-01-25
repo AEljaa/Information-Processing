@@ -1,5 +1,5 @@
 Flow report for task1_top
-Sat Jan 20 18:09:01 2024
+Sat Jan 20 22:10:38 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Jan 20 18:08:58 2024       ;
+; Flow Status                        ; Successful - Sat Jan 20 22:10:35 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; task1_top                                   ;
 ; Top-level Entity Name              ; task1_top                                   ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/20/2024 18:08:41 ;
+; Start date & time ; 01/20/2024 22:10:17 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; task1_top           ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 39908808459155.170577412008700         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 91766317404.170578861716224            ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -91,11 +91,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4776 MB             ; 00:00:18                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4776 MB             ; 00:00:18                           ;
 ; Fitter               ; 00:00:05     ; 1.0                     ; 6198 MB             ; 00:00:08                           ;
 ; Assembler            ; 00:00:03     ; 1.0                     ; 4679 MB             ; 00:00:03                           ;
 ; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4899 MB             ; 00:00:02                           ;
-; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:31                           ;
+; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:31                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

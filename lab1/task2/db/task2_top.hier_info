@@ -1,0 +1,70 @@
+|task2_top
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+SW[9] => SW[9].IN1
+HEX0_3[0] << hex_to_7seg:SEG0.port3
+HEX0_3[1] << hex_to_7seg:SEG0.port3
+HEX0_3[2] << hex_to_7seg:SEG0.port3
+HEX0_3[3] << hex_to_7seg:SEG0.port3
+HEX0_3[4] << hex_to_7seg:SEG0.port3
+HEX0_3[5] << hex_to_7seg:SEG0.port3
+HEX0_3[6] << hex_to_7seg:SEG0.port3
+HEX4_7[0] << hex_to_7seg:SEG0.port4
+HEX4_7[1] << hex_to_7seg:SEG0.port4
+HEX4_7[2] << hex_to_7seg:SEG0.port4
+HEX4_7[3] << hex_to_7seg:SEG0.port4
+HEX4_7[4] << hex_to_7seg:SEG0.port4
+HEX4_7[5] << hex_to_7seg:SEG0.port4
+HEX4_7[6] << hex_to_7seg:SEG0.port4
+HEX8_9[0] << hex_to_7seg:SEG0.port5
+HEX8_9[1] << hex_to_7seg:SEG0.port5
+HEX8_9[2] << hex_to_7seg:SEG0.port5
+HEX8_9[3] << hex_to_7seg:SEG0.port5
+HEX8_9[4] << hex_to_7seg:SEG0.port5
+HEX8_9[5] << hex_to_7seg:SEG0.port5
+HEX8_9[6] << hex_to_7seg:SEG0.port5
+
+
+|task2_top|hex_to_7seg:SEG0
+in0_3[0] => Decoder0.IN3
+in0_3[1] => Decoder0.IN2
+in0_3[2] => Decoder0.IN1
+in0_3[3] => Decoder0.IN0
+in4_7[0] => Decoder1.IN3
+in4_7[1] => Decoder1.IN2
+in4_7[2] => Decoder1.IN1
+in4_7[3] => Decoder1.IN0
+in8_9[0] => Decoder2.IN1
+in8_9[0] => out8_9[4].DATAIN
+in8_9[1] => Decoder2.IN0
+in8_9[1] => out8_9[6].DATAIN
+out0_3[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out0_3[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out0_3[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out0_3[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out0_3[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out0_3[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out0_3[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out4_7[0] <= WideOr13.DB_MAX_OUTPUT_PORT_TYPE
+out4_7[1] <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
+out4_7[2] <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+out4_7[3] <= WideOr10.DB_MAX_OUTPUT_PORT_TYPE
+out4_7[4] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+out4_7[5] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+out4_7[6] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+out8_9[0] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+out8_9[1] <= <GND>
+out8_9[2] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+out8_9[3] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+out8_9[4] <= in8_9[0].DB_MAX_OUTPUT_PORT_TYPE
+out8_9[5] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+out8_9[6] <= in8_9[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

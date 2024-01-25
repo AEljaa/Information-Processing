@@ -1,5 +1,5 @@
 Analysis & Synthesis report for task1_top
-Sat Jan 20 18:08:48 2024
+Sat Jan 20 22:10:25 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jan 20 18:08:48 2024       ;
+; Analysis & Synthesis Status        ; Successful - Sat Jan 20 22:10:25 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; task1_top                                   ;
 ; Top-level Entity Name              ; task1_top                                   ;
@@ -205,14 +205,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                          ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name           ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------+-------------+--------------+
-; |task1_top                 ; 7 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 11   ; 0            ; 0          ; |task1_top                    ; task1_top   ; work         ;
-;    |hex_to_7seg:comb_3|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |task1_top|hex_to_7seg:comb_3 ; hex_to_7seg ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                        ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name         ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------+-------------+--------------+
+; |task1_top                 ; 7 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 11   ; 0            ; 0          ; |task1_top                  ; task1_top   ; work         ;
+;    |hex_to_7seg:SEG0|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |task1_top|hex_to_7seg:SEG0 ; hex_to_7seg ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -262,7 +262,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Jan 20 18:08:40 2024
+    Info: Processing started: Sat Jan 20 22:10:16 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off task1 -c task1_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -270,9 +270,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file task1_t
     Info (12023): Found entity 1: task1_top File: C:/Users/adam_/Desktop/Imperial/Year 2/InfoProc/lab1/task1/task1_top.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file hex_to_7seg.v
     Info (12023): Found entity 1: hex_to_7seg File: C:/Users/adam_/Desktop/Imperial/Year 2/InfoProc/lab1/task1/hex_to_7seg.v Line: 1
-Critical Warning (10846): Verilog HDL Instantiation warning at task1_top.v(9): instance has no name File: C:/Users/adam_/Desktop/Imperial/Year 2/InfoProc/lab1/task1/task1_top.v Line: 9
 Info (12127): Elaborating entity "task1_top" for the top level hierarchy
-Info (12128): Elaborating entity "hex_to_7seg" for hierarchy "hex_to_7seg:comb_3" File: C:/Users/adam_/Desktop/Imperial/Year 2/InfoProc/lab1/task1/task1_top.v Line: 9
+Info (12128): Elaborating entity "hex_to_7seg" for hierarchy "hex_to_7seg:SEG0" File: C:/Users/adam_/Desktop/Imperial/Year 2/InfoProc/lab1/task1/task1_top.v Line: 9
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -280,10 +279,10 @@ Info (21057): Implemented 18 device resources after synthesis - the final resour
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 7 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4776 megabytes
-    Info: Processing ended: Sat Jan 20 18:08:48 2024
-    Info: Elapsed time: 00:00:08
+    Info: Processing ended: Sat Jan 20 22:10:25 2024
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:18
 
 

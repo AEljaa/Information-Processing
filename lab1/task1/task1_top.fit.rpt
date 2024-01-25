@@ -1,5 +1,5 @@
 Fitter report for task1_top
-Sat Jan 20 18:08:54 2024
+Sat Jan 20 22:10:31 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Jan 20 18:08:54 2024       ;
+; Fitter Status                      ; Successful - Sat Jan 20 22:10:31 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; task1_top                                   ;
 ; Top-level Entity Name              ; task1_top                                   ;
@@ -1080,14 +1080,14 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------+--------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                             ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name           ; Entity Name ; Library Name ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------+-------------+--------------+
-; |task1_top                 ; 8 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 11   ; 0            ; 8 (1)        ; 0 (0)             ; 0 (0)            ; 0          ; |task1_top                    ; task1_top   ; work         ;
-;    |hex_to_7seg:comb_3|    ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |task1_top|hex_to_7seg:comb_3 ; hex_to_7seg ; work         ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------+-------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                           ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-----------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name         ; Entity Name ; Library Name ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-----------------------------+-------------+--------------+
+; |task1_top                 ; 8 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 11   ; 0            ; 8 (1)        ; 0 (0)             ; 0 (0)            ; 0          ; |task1_top                  ; task1_top   ; work         ;
+;    |hex_to_7seg:SEG0|      ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |task1_top|hex_to_7seg:SEG0 ; hex_to_7seg ; work         ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-----------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1110,44 +1110,44 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+-------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                    ;
-+-------------------------------------+-------------------+---------+
-; Source Pin / Fanout                 ; Pad To Core Index ; Setting ;
-+-------------------------------------+-------------------+---------+
-; SW[0]                               ;                   ;         ;
-;      - hex_to_7seg:comb_3|WideOr6~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr5~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr4~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr3~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr2~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr1~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr0~0 ; 0                 ; 6       ;
-; SW[1]                               ;                   ;         ;
-;      - hex_to_7seg:comb_3|WideOr6~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr5~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr4~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr3~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr2~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr1~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr0~0 ; 0                 ; 6       ;
-; SW[2]                               ;                   ;         ;
-;      - hex_to_7seg:comb_3|WideOr6~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr5~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr4~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr3~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr2~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr1~0 ; 0                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr0~0 ; 0                 ; 6       ;
-; SW[3]                               ;                   ;         ;
-;      - hex_to_7seg:comb_3|WideOr6~0 ; 1                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr5~0 ; 1                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr4~0 ; 1                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr3~0 ; 1                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr2~0 ; 1                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr1~0 ; 1                 ; 6       ;
-;      - hex_to_7seg:comb_3|WideOr0~0 ; 1                 ; 6       ;
-+-------------------------------------+-------------------+---------+
++-----------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                  ;
++-----------------------------------+-------------------+---------+
+; Source Pin / Fanout               ; Pad To Core Index ; Setting ;
++-----------------------------------+-------------------+---------+
+; SW[0]                             ;                   ;         ;
+;      - hex_to_7seg:SEG0|WideOr6~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr5~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr4~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr3~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr2~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr1~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr0~0 ; 0                 ; 6       ;
+; SW[1]                             ;                   ;         ;
+;      - hex_to_7seg:SEG0|WideOr6~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr5~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr4~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr3~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr2~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr1~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr0~0 ; 0                 ; 6       ;
+; SW[2]                             ;                   ;         ;
+;      - hex_to_7seg:SEG0|WideOr6~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr5~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr4~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr3~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr2~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr1~0 ; 0                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr0~0 ; 0                 ; 6       ;
+; SW[3]                             ;                   ;         ;
+;      - hex_to_7seg:SEG0|WideOr6~0 ; 1                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr5~0 ; 1                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr4~0 ; 1                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr3~0 ; 1                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr2~0 ; 1                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr1~0 ; 1                 ; 6       ;
+;      - hex_to_7seg:SEG0|WideOr0~0 ; 1                 ; 6       ;
++-----------------------------------+-------------------+---------+
 
 
 +------------------------------------------------+
@@ -1394,7 +1394,7 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1418,9 +1418,9 @@ Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments 
 Info (144001): Generated suppressed messages file C:/Users/adam_/Desktop/Imperial/Year 2/InfoProc/lab1/task1/task1_top.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 6198 megabytes
-    Info: Processing ended: Sat Jan 20 18:08:55 2024
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Processing ended: Sat Jan 20 22:10:31 2024
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:08
 
 
 +----------------------------+
