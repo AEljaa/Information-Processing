@@ -1,0 +1,6 @@
+14:30:22 **** Clean-only build of configuration Nios II for project hello_world_sw ****
+make clean 
+[hello_world_sw clean complete]
+
+14:30:23 Build Finished (took 199ms)
+
