@@ -96,6 +96,7 @@ int main() {
     }
     initFIR();
 
+
     timer_init(sys_timer_isr);
     while (1) {
     	clock_t exec_t1, exec_t2;
@@ -107,7 +108,7 @@ int main() {
 
 		exec_t2 = times(NULL); // get system time after finishing the process
 		float delta_t=exec_t2-exec_t1;
-		alt_printf("proc time = %dticks\n", delta_t);
+		alt_printf("proc time = %d ticks \n", delta_t);
     }
 
 

@@ -5811,3 +5811,1335 @@ java.lang.Exception: Connected system ID hash not found on target at expected ba
 
 !ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 20:48:39.696
 !MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab3/src/Golden_Top/software/accelerometer_c/accelerometer_c.elf]
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:51:03.675
+!MESSAGE An internal error occurred during: "Updating Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:481)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$10(IndexDiffCacheEntry.java:475)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:421)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:51:03.676
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:51:03.676
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:53:32.095
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:53:37.706
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:54:40.348
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:54:43.847
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:54:56.231
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:55:02.001
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:55:03.569
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:56:46.187
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:56:46.188
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:57:00.018
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:57:02.410
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:57:05.163
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:57:06.851
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:57:20.415
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:57:31.192
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:57:58.489
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:58:27.361
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:58:34.274
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:58:37.477
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:58:46.089
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:59:39.002
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:59:46.733
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:59:46.734
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 20:59:55.796
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 20:59:57.688
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:00:01.091
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab3/src/Golden_Top/software/accelerometer_c/accelerometer_c.elf]
+
+!ENTRY org.eclipse.cdt.ui 4 0 2024-02-04 21:00:49.595
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element led_acceleromter_main.c does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:484)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:573)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:62)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:635)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:362)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:63)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:87)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:349)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2024-02-04 21:00:49.596
+!MESSAGE Element led_acceleromter_main.c does not exist.
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:01:34.998
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:01:40.556
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:01:40.557
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:01:49.958
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:01:51.266
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:01:51.929
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:01:55.931
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab3/src/Golden_Top/software/accelerometer_c/accelerometer_c.elf]
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:02:13.452
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:02:25.931
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:02:27.238
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:02:27.902
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:02:28.458
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:02:31.750
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab3/src/Golden_Top/software/accelerometer_c/accelerometer_c.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:02:54.465
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:02:55.266
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:02:59.012
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab3/src/Golden_Top/software/accelerometer_c/accelerometer_c.elf]
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:03:23.979
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:04:02.813
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:04:35.328
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:04:40.896
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:04:40.897
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:04:46.838
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:04:48.131
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:04:48.817
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:04:52.601
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab3/src/Golden_Top/software/accelerometer_c/accelerometer_c.elf]
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:05:03.545
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:05:17.991
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:05:17.992
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:05:26.977
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:05:28.260
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:05:29.024
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:05:32.384
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab3/src/Golden_Top/software/accelerometer_c/accelerometer_c.elf]
+!SESSION 2024-02-04 21:07:21.619 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/intelfpga_lite/18.1/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:07:39.303
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2024-02-04 21:07:39.350
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 1.100.0.v20160217-0435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-02-04 21:07:48.394
+!MESSAGE An internal error occurred during: "Computing Git status for repository Information-Processing".
+!STACK 0
+java.lang.InternalError: Should not get here
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink0(Native Method)
+	at sun.nio.fs.WindowsNativeDispatcher.CreateSymbolicLink(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.createSymbolicLink(Unknown Source)
+	at java.nio.file.Files.createSymbolicLink(Unknown Source)
+	at org.eclipse.jgit.util.FileUtils.createSymLink(FileUtils.java:415)
+	at org.eclipse.jgit.util.FS.createSymLink(FS.java:704)
+	at org.eclipse.jgit.util.FS_Win32.detectSymlinkSupport(FS_Win32.java:171)
+	at org.eclipse.jgit.util.FS_Win32.supportsSymlinks(FS_Win32.java:162)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.<init>(ContainerTreeIterator.java:299)
+	at org.eclipse.egit.core.ContainerTreeIterator.entries(ContainerTreeIterator.java:190)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:142)
+	at org.eclipse.egit.core.ContainerTreeIterator.<init>(ContainerTreeIterator.java:135)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:84)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:543)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:532)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:292)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2024-02-04 21:08:39.525
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2024-02-04 21:08:39.527
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:09:04.881
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2024-02-04 21:09:08.361
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab3/src/Golden_Top/software/accelerometer_c/accelerometer_c.elf]

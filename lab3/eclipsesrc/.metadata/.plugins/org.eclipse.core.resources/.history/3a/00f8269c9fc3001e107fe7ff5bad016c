@@ -6,9 +6,6 @@
 #include "sys/alt_irq.h"
 #include <stdlib.h>
 
-#include "alt_types.h"
-#include "sys/times.h"
-
 #define OFFSET -32
 #define PWM_PERIOD 16
 
@@ -98,18 +95,12 @@ int main() {
 
     timer_init(sys_timer_isr);
     while (1) {
-    	clock_t exec_t1, exec_t2;
-		exec_t1=times(NULL);
 
         alt_up_accelerometer_spi_read_x_axis(acc_dev, & x_read);
-        //alt_printf("raw data: %x\n", x_read);
+        alt_printf("raw data: %x\n", x_read);
         convert_read(x_read, & level, & led);
 
-		exec_t2 = times(NULL); // get system time after finishing the process
-		float delta_t=exec_t2-exec_t1;
-		alt_printf("proc time = %dticks\n", delta_t);
     }
-
 
     return 0;
 }
