@@ -18,18 +18,15 @@ int main()
 		button_datain = IORD_ALTERA_AVALON_PIO_DATA(BUTTON_BASE); // Read the PB
 		//Mask the bits so the leftmost LEDs are off (we only care about LED3-0)
 		switch_datain &= (0b1111111111);
-		int currlight=1;
+		int currlight=2;
+		for(int i=0;i<10;i++){
+					//Send the data to the LED
+			if(button_datain && 0000000001){
+				alt_putstr("1\n");
+				button_datain = currlight << 1;
+			}
+			IOWR_ALTERA_AVALON_PIO_DATA(LED_BASE,button_datain);
 
-		for(int i=0;i<9;i++){
-			currlight = currlight *2;
-			IOWR_ALTERA_AVALON_PIO_DATA(LED_BASE, currlight);
-			usleep(500000); // 0.5s delay
-		}
-
-		for(int j=10;j>1;j--){
-			currlight = currlight/2;
-			IOWR_ALTERA_AVALON_PIO_DATA(LED_BASE, currlight );
-			usleep(500000); // 0.5s delay
 		}
 
 	}

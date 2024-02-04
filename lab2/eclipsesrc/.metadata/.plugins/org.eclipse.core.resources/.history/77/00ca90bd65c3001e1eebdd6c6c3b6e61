@@ -19,17 +19,18 @@ int main()
 		//Mask the bits so the leftmost LEDs are off (we only care about LED3-0)
 		switch_datain &= (0b1111111111);
 		int currlight=1;
+		for(int i=0;i<10;i++){
 
-		for(int i=0;i<9;i++){
-			currlight = currlight *2;
-			IOWR_ALTERA_AVALON_PIO_DATA(LED_BASE, currlight);
+			IOWR_ALTERA_AVALON_PIO_DATA(LED_BASE, currlight <<i);
 			usleep(500000); // 0.5s delay
-		}
+			if(i==9){
+				for(int j=10;j>0;j--){
+					alt_putstr("In backward loop\n");
+					IOWR_ALTERA_AVALON_PIO_DATA(LED_BASE, currlight >> (j-1));
+					usleep(500000); // 0.5s delay
+				}
+			}
 
-		for(int j=10;j>1;j--){
-			currlight = currlight/2;
-			IOWR_ALTERA_AVALON_PIO_DATA(LED_BASE, currlight );
-			usleep(500000); // 0.5s delay
 		}
 
 	}

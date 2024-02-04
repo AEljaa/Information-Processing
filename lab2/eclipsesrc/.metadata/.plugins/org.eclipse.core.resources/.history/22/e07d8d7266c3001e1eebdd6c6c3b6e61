@@ -26,7 +26,7 @@ int main()
 			usleep(500000); // 0.5s delay
 		}
 
-		for(int j=10;j>1;j--){
+		for(int j=10;j>0;j--){
 			currlight = currlight/2;
 			IOWR_ALTERA_AVALON_PIO_DATA(LED_BASE, currlight );
 			usleep(500000); // 0.5s delay

@@ -20,13 +20,13 @@ int main()
 		switch_datain &= (0b1111111111);
 		int currlight=1;
 
-		for(int i=0;i<9;i++){
+		for(int i=0;i<10;i++){
 			currlight = currlight *2;
 			IOWR_ALTERA_AVALON_PIO_DATA(LED_BASE, currlight);
 			usleep(500000); // 0.5s delay
 		}
 
-		for(int j=10;j>1;j--){
+		for(int j=9;j>0;j--){
 			currlight = currlight/2;
 			IOWR_ALTERA_AVALON_PIO_DATA(LED_BASE, currlight );
 			usleep(500000); // 0.5s delay
