@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+org.eclipse.team.ui.first_time=false
+org.eclipse.team.ui.syncview_default_perspective=org.eclipse.team.ui.sync_view_perspective_none
+teamContentDescriptors/org.eclipse.core.resources.modelProvider/enabled=true
+teamContentDescriptors/org.eclipse.egit.ui.changeSetModel/enabled=false
+teamContentDescriptors/org.eclipse.team.ui.patchModelProvider/enabled=true
