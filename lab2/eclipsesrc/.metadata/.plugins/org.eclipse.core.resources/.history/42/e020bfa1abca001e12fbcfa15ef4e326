@@ -5,7 +5,7 @@
 
 int calc_delay (){
     int switch_datain = IORD_ALTERA_AVALON_PIO_DATA(SWITCH_BASE);
-    float switch_ratio = switch_datain / 1024.0; // Normalize switch data to range [0, 1]
+    float switch_ratio = switch_datain / 255.0; // Normalize switch data to range [0, 1]
     int delay = (int)(1000000 * (1 - switch_ratio)); // Adjust delay inversely proportional to switch data
     return delay;
 }
@@ -28,8 +28,6 @@ int main()
         {
             currlight = currlight * 2;
             delay=calc_delay();
-            alt_putstr("Switch Data: ");
-            alt_printf("%d\n", delay);
             usleep(delay); // Delay based on switch data
             IOWR_ALTERA_AVALON_PIO_DATA(LED_BASE, currlight);
         }
@@ -38,8 +36,6 @@ int main()
         {
             currlight = currlight / 2;
             delay=calc_delay();
-            alt_putstr("Switch Data: ");
-            alt_printf("%d\n", delay);
             usleep(delay); // Delay based on switch data
             IOWR_ALTERA_AVALON_PIO_DATA(LED_BASE, currlight);
         }

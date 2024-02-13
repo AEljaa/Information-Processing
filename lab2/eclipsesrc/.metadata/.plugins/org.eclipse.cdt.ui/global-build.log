@@ -1045,3 +1045,629 @@ Info: Building ../HelloWorld_bsp/
 C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
 [BSP build complete]
 [HelloWorld build complete]
+19:17:15 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../HelloWorld_bsp//HAL/inc -I../HelloWorld_bsp/ -I../HelloWorld_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:25:15: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+    alt_putstr(delay);
+               ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:27:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(delay); // dfault 1s delay
+    ^
+hello_world_small.c:33:15: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+    alt_putstr(delay);
+               ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:8:20: warning: variable 'button_datain' set but not used [-Wunused-but-set-variable]
+  int switch_datain,button_datain;
+                    ^
+Info: Linking HelloWorld.elf
+nios2-elf-g++  -T'../HelloWorld_bsp//linker.x' -msys-crt0='../HelloWorld_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../HelloWorld_bsp/  -msmallc  -Wl,-Map=HelloWorld.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o HelloWorld.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert HelloWorld.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x21090 --timestamp 1706455902 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_setup_v2 --quartus_project_dir "C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2" --sopcinfo C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2/software/HelloWorld_bsp/../../nios_setup_v2.sopcinfo
+Info: (HelloWorld.elf) 9788 Bytes program size (code + initialized data).
+Info:                  54 KBytes free for stack + heap.
+Info: Creating HelloWorld.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source HelloWorld.elf >HelloWorld.objdump
+[HelloWorld build complete]
+19:17:26 **** Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+19:17:34 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+19:21:33 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../HelloWorld_bsp//HAL/inc -I../HelloWorld_bsp/ -I../HelloWorld_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:25:15: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+    alt_putstr(delay);
+               ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:27:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(delay); // dfault 1s delay
+    ^
+hello_world_small.c:33:15: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+    alt_putstr(delay);
+               ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:8:20: warning: variable 'button_datain' set but not used [-Wunused-but-set-variable]
+  int switch_datain,button_datain;
+                    ^
+Info: Linking HelloWorld.elf
+nios2-elf-g++  -T'../HelloWorld_bsp//linker.x' -msys-crt0='../HelloWorld_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../HelloWorld_bsp/  -msmallc  -Wl,-Map=HelloWorld.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o HelloWorld.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert HelloWorld.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x21090 --timestamp 1706455902 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_setup_v2 --quartus_project_dir "C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2" --sopcinfo C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2/software/HelloWorld_bsp/../../nios_setup_v2.sopcinfo
+Info: (HelloWorld.elf) 1440 Bytes program size (code + initialized data).
+Info:                  62 KBytes free for stack + heap.
+Info: Creating HelloWorld.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source HelloWorld.elf >HelloWorld.objdump
+[HelloWorld build complete]
+19:21:41 **** Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+19:21:45 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+19:26:23 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../HelloWorld_bsp//HAL/inc -I../HelloWorld_bsp/ -I../HelloWorld_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:25:15: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+    alt_putstr(delay);
+               ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:27:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(delay); // dfault 1s delay
+    ^
+hello_world_small.c:33:15: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+    alt_putstr(delay);
+               ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:8:20: warning: variable 'button_datain' set but not used [-Wunused-but-set-variable]
+  int switch_datain,button_datain;
+                    ^
+Info: Linking HelloWorld.elf
+nios2-elf-g++  -T'../HelloWorld_bsp//linker.x' -msys-crt0='../HelloWorld_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../HelloWorld_bsp/  -msmallc  -Wl,-Map=HelloWorld.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o HelloWorld.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert HelloWorld.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x21090 --timestamp 1706455902 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_setup_v2 --quartus_project_dir "C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2" --sopcinfo C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2/software/HelloWorld_bsp/../../nios_setup_v2.sopcinfo
+Info: (HelloWorld.elf) 1412 Bytes program size (code + initialized data).
+Info:                  62 KBytes free for stack + heap.
+Info: Creating HelloWorld.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source HelloWorld.elf >HelloWorld.objdump
+[HelloWorld build complete]
+19:26:41 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+19:26:48 **** Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+19:26:49 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+19:27:27 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../HelloWorld_bsp//HAL/inc -I../HelloWorld_bsp/ -I../HelloWorld_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:25:15: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+    alt_putstr(delay);
+               ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:27:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(delay); // dfault 1s delay
+    ^
+hello_world_small.c:33:15: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+    alt_putstr(delay);
+               ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:8:20: warning: variable 'button_datain' set but not used [-Wunused-but-set-variable]
+  int switch_datain,button_datain;
+                    ^
+Info: Linking HelloWorld.elf
+nios2-elf-g++  -T'../HelloWorld_bsp//linker.x' -msys-crt0='../HelloWorld_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../HelloWorld_bsp/  -msmallc  -Wl,-Map=HelloWorld.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o HelloWorld.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert HelloWorld.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x21090 --timestamp 1706455902 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_setup_v2 --quartus_project_dir "C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2" --sopcinfo C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2/software/HelloWorld_bsp/../../nios_setup_v2.sopcinfo
+Info: (HelloWorld.elf) 1376 Bytes program size (code + initialized data).
+Info:                  62 KBytes free for stack + heap.
+Info: Creating HelloWorld.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source HelloWorld.elf >HelloWorld.objdump
+[HelloWorld build complete]
+19:27:40 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+19:27:41 **** Build of configuration Nios II for project HelloWorld_bsp ****
+make all 
+[BSP build complete]
+19:27:49 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+19:30:25 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../HelloWorld_bsp//HAL/inc -I../HelloWorld_bsp/ -I../HelloWorld_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:16:14: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+   alt_putstr(switch_datain);
+              ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:26:15: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+    alt_putstr(switch_datain);
+               ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:28:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(delay); // dfault 1s delay
+    ^
+hello_world_small.c:34:15: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+    alt_putstr(switch_datain);
+               ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:8:20: warning: variable 'button_datain' set but not used [-Wunused-but-set-variable]
+  int switch_datain,button_datain;
+                    ^
+Info: Linking HelloWorld.elf
+nios2-elf-g++  -T'../HelloWorld_bsp//linker.x' -msys-crt0='../HelloWorld_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../HelloWorld_bsp/  -msmallc  -Wl,-Map=HelloWorld.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o HelloWorld.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert HelloWorld.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x21090 --timestamp 1706455902 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_setup_v2 --quartus_project_dir "C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2" --sopcinfo C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2/software/HelloWorld_bsp/../../nios_setup_v2.sopcinfo
+Info: (HelloWorld.elf) 1428 Bytes program size (code + initialized data).
+Info:                  62 KBytes free for stack + heap.
+Info: Creating HelloWorld.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source HelloWorld.elf >HelloWorld.objdump
+[HelloWorld build complete]
+19:30:26 **** Incremental Build of configuration Nios II for project HelloWorld_bsp ****
+make all 
+[BSP build complete]
+19:30:31 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+19:41:36 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../HelloWorld_bsp//HAL/inc -I../HelloWorld_bsp/ -I../HelloWorld_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:16:14: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+   alt_putstr(switch_datain);
+              ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:26:15: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+    alt_putstr(switch_datain);
+               ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:27:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(delay); // dfault 1s delay
+    ^
+hello_world_small.c:35:15: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+    alt_putstr(switch_datain);
+               ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:8:20: warning: variable 'button_datain' set but not used [-Wunused-but-set-variable]
+  int switch_datain,button_datain;
+                    ^
+Info: Linking HelloWorld.elf
+nios2-elf-g++  -T'../HelloWorld_bsp//linker.x' -msys-crt0='../HelloWorld_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../HelloWorld_bsp/  -msmallc  -Wl,-Map=HelloWorld.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o HelloWorld.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert HelloWorld.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x21090 --timestamp 1706455902 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_setup_v2 --quartus_project_dir "C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2" --sopcinfo C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2/software/HelloWorld_bsp/../../nios_setup_v2.sopcinfo
+Info: (HelloWorld.elf) 1424 Bytes program size (code + initialized data).
+Info:                  62 KBytes free for stack + heap.
+Info: Creating HelloWorld.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source HelloWorld.elf >HelloWorld.objdump
+[HelloWorld build complete]
+19:41:38 **** Incremental Build of configuration Nios II for project HelloWorld_bsp ****
+make all 
+[BSP build complete]
+19:41:48 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+19:46:11 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+19:51:24 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+19:51:25 **** Incremental Build of configuration Nios II for project HelloWorld_bsp ****
+make all 
+[BSP build complete]
+19:51:34 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../HelloWorld_bsp//HAL/inc -I../HelloWorld_bsp/ -I../HelloWorld_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:16:14: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+   alt_putstr(switch_datain);
+              ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:26:15: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+    alt_putstr(switch_datain);
+               ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:27:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(delay); // dfault 1s delay
+    ^
+hello_world_small.c:35:15: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+    alt_putstr(switch_datain);
+               ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:8:20: warning: variable 'button_datain' set but not used [-Wunused-but-set-variable]
+  int switch_datain,button_datain;
+                    ^
+Info: Linking HelloWorld.elf
+nios2-elf-g++  -T'../HelloWorld_bsp//linker.x' -msys-crt0='../HelloWorld_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../HelloWorld_bsp/  -msmallc  -Wl,-Map=HelloWorld.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o HelloWorld.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert HelloWorld.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x21090 --timestamp 1706455902 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_setup_v2 --quartus_project_dir "C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2" --sopcinfo C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2/software/HelloWorld_bsp/../../nios_setup_v2.sopcinfo
+Info: (HelloWorld.elf) 1428 Bytes program size (code + initialized data).
+Info:                  62 KBytes free for stack + heap.
+Info: Creating HelloWorld.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source HelloWorld.elf >HelloWorld.objdump
+[HelloWorld build complete]
+19:54:20 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../HelloWorld_bsp//HAL/inc -I../HelloWorld_bsp/ -I../HelloWorld_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:16:14: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+   alt_putstr(switch_datain);
+              ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:26:15: error: expected expression before 'int'
+    alt_putstr(int(switch_datain));
+               ^
+hello_world_small.c:27:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(delay); // dfault 1s delay
+    ^
+hello_world_small.c:35:15: error: expected expression before 'int'
+    alt_putstr(int(switch_datain));
+               ^
+hello_world_small.c:21:7: warning: unused variable 'delay' [-Wunused-variable]
+   int delay=1000000; //ms
+       ^
+hello_world_small.c:8:20: warning: variable 'button_datain' set but not used [-Wunused-but-set-variable]
+  int switch_datain,button_datain;
+                    ^
+make: *** [obj/default/hello_world_small.o] Error 1
+19:54:21 **** Incremental Build of configuration Nios II for project HelloWorld_bsp ****
+make all 
+[BSP build complete]
+19:54:26 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../HelloWorld_bsp//HAL/inc -I../HelloWorld_bsp/ -I../HelloWorld_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:16:14: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+   alt_putstr(switch_datain);
+              ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:26:15: error: expected expression before 'int'
+    alt_putstr(int(switch_datain));
+               ^
+hello_world_small.c:27:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(delay); // dfault 1s delay
+    ^
+hello_world_small.c:35:15: error: expected expression before 'int'
+    alt_putstr(int(switch_datain));
+               ^
+hello_world_small.c:21:7: warning: unused variable 'delay' [-Wunused-variable]
+   int delay=1000000; //ms
+       ^
+hello_world_small.c:8:20: warning: variable 'button_datain' set but not used [-Wunused-but-set-variable]
+  int switch_datain,button_datain;
+                    ^
+make: *** [obj/default/hello_world_small.o] Error 1
+19:54:39 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../HelloWorld_bsp//HAL/inc -I../HelloWorld_bsp/ -I../HelloWorld_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:16:14: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+   alt_putstr(switch_datain);
+              ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:26:15: error: expected expression before 'int'
+    alt_putstr(int(switch_datain));
+               ^
+hello_world_small.c:27:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(delay); // dfault 1s delay
+    ^
+hello_world_small.c:35:15: error: expected expression before 'int'
+    alt_putstr(int(switch_datain));
+               ^
+hello_world_small.c:21:7: warning: unused variable 'delay' [-Wunused-variable]
+   int delay=1000000; //ms
+       ^
+hello_world_small.c:8:20: warning: variable 'button_datain' set but not used [-Wunused-but-set-variable]
+  int switch_datain,button_datain;
+                    ^
+make: *** [obj/default/hello_world_small.o] Error 1
+19:54:40 **** Incremental Build of configuration Nios II for project HelloWorld_bsp ****
+make all 
+[BSP build complete]
+19:54:45 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../HelloWorld_bsp//HAL/inc -I../HelloWorld_bsp/ -I../HelloWorld_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:16:14: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+   alt_putstr(switch_datain);
+              ^
+In file included from hello_world_small.c:1:0:
+../HelloWorld_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:26:15: error: expected expression before 'int'
+    alt_putstr(int(switch_datain));
+               ^
+hello_world_small.c:27:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(delay); // dfault 1s delay
+    ^
+hello_world_small.c:35:15: error: expected expression before 'int'
+    alt_putstr(int(switch_datain));
+               ^
+hello_world_small.c:21:7: warning: unused variable 'delay' [-Wunused-variable]
+   int delay=1000000; //ms
+       ^
+hello_world_small.c:8:20: warning: variable 'button_datain' set but not used [-Wunused-but-set-variable]
+  int switch_datain,button_datain;
+                    ^
+make: *** [obj/default/hello_world_small.o] Error 1
+19:57:28 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../HelloWorld_bsp//HAL/inc -I../HelloWorld_bsp/ -I../HelloWorld_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:28:13: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+             usleep(delay); // Delay based on switch data
+             ^
+hello_world_small.c:8:24: warning: variable 'button_datain' set but not used [-Wunused-but-set-variable]
+     int switch_datain, button_datain;
+                        ^
+Info: Linking HelloWorld.elf
+nios2-elf-g++  -T'../HelloWorld_bsp//linker.x' -msys-crt0='../HelloWorld_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../HelloWorld_bsp/  -msmallc  -Wl,-Map=HelloWorld.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o HelloWorld.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert HelloWorld.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x21090 --timestamp 1706455902 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_setup_v2 --quartus_project_dir "C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2" --sopcinfo C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2/software/HelloWorld_bsp/../../nios_setup_v2.sopcinfo
+Info: (HelloWorld.elf) 7920 Bytes program size (code + initialized data).
+Info:                  56 KBytes free for stack + heap.
+Info: Creating HelloWorld.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source HelloWorld.elf >HelloWorld.objdump
+[HelloWorld build complete]
+19:57:30 **** Incremental Build of configuration Nios II for project HelloWorld_bsp ****
+make all 
+[BSP build complete]
+19:57:42 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+19:57:43 **** Incremental Build of configuration Nios II for project HelloWorld_bsp ****
+make all 
+[BSP build complete]
+19:57:49 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+20:06:57 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../HelloWorld_bsp//HAL/inc -I../HelloWorld_bsp/ -I../HelloWorld_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:31:13: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+             usleep(delay); // Delay based on switch data
+             ^
+hello_world_small.c:14:9: warning: variable 'button_datain' set but not used [-Wunused-but-set-variable]
+     int button_datain;
+         ^
+Info: Linking HelloWorld.elf
+nios2-elf-g++  -T'../HelloWorld_bsp//linker.x' -msys-crt0='../HelloWorld_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../HelloWorld_bsp/  -msmallc  -Wl,-Map=HelloWorld.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o HelloWorld.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert HelloWorld.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x21090 --timestamp 1706455902 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_setup_v2 --quartus_project_dir "C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2" --sopcinfo C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2/software/HelloWorld_bsp/../../nios_setup_v2.sopcinfo
+Info: (HelloWorld.elf) 7408 Bytes program size (code + initialized data).
+Info:                  56 KBytes free for stack + heap.
+Info: Creating HelloWorld.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source HelloWorld.elf >HelloWorld.objdump
+[HelloWorld build complete]
+20:06:58 **** Incremental Build of configuration Nios II for project HelloWorld_bsp ****
+make all 
+[BSP build complete]
+20:07:06 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+20:08:22 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../HelloWorld_bsp//HAL/inc -I../HelloWorld_bsp/ -I../HelloWorld_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:33:13: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+             usleep(delay); // Delay based on switch data
+             ^
+hello_world_small.c:14:9: warning: variable 'button_datain' set but not used [-Wunused-but-set-variable]
+     int button_datain;
+         ^
+Info: Linking HelloWorld.elf
+nios2-elf-g++  -T'../HelloWorld_bsp//linker.x' -msys-crt0='../HelloWorld_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../HelloWorld_bsp/  -msmallc  -Wl,-Map=HelloWorld.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o HelloWorld.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert HelloWorld.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x21090 --timestamp 1706455902 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_setup_v2 --quartus_project_dir "C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2" --sopcinfo C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2/software/HelloWorld_bsp/../../nios_setup_v2.sopcinfo
+Info: (HelloWorld.elf) 7936 Bytes program size (code + initialized data).
+Info:                  56 KBytes free for stack + heap.
+Info: Creating HelloWorld.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source HelloWorld.elf >HelloWorld.objdump
+[HelloWorld build complete]
+20:08:24 **** Incremental Build of configuration Nios II for project HelloWorld_bsp ****
+make all 
+[BSP build complete]
+20:08:29 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
+20:09:58 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../HelloWorld_bsp//HAL/inc -I../HelloWorld_bsp/ -I../HelloWorld_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:33:13: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+             usleep(delay); // Delay based on switch data
+             ^
+hello_world_small.c:14:9: warning: variable 'button_datain' set but not used [-Wunused-but-set-variable]
+     int button_datain;
+         ^
+Info: Linking HelloWorld.elf
+nios2-elf-g++  -T'../HelloWorld_bsp//linker.x' -msys-crt0='../HelloWorld_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../HelloWorld_bsp/  -msmallc  -Wl,-Map=HelloWorld.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o HelloWorld.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert HelloWorld.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x21090 --timestamp 1706455902 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name nios_setup_v2 --quartus_project_dir "C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2" --sopcinfo C:/Users/adam_/Desktop/Imperial/Year2/Information-Processing/lab2/software/HelloWorld_bsp/../../nios_setup_v2.sopcinfo
+Info: (HelloWorld.elf) 7576 Bytes program size (code + initialized data).
+Info:                  56 KBytes free for stack + heap.
+Info: Creating HelloWorld.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source HelloWorld.elf >HelloWorld.objdump
+[HelloWorld build complete]
+20:10:00 **** Incremental Build of configuration Nios II for project HelloWorld_bsp ****
+make all 
+[BSP build complete]
+20:10:04 **** Incremental Build of configuration Nios II for project HelloWorld ****
+make all 
+Info: Building ../HelloWorld_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../HelloWorld_bsp/
+[BSP build complete]
+[HelloWorld build complete]
